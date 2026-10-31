@@ -1,0 +1,11 @@
+{
+  "name": "rtv365nuvioaddon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Neuradni Stremio/Nuvio addon za RTV 365 (365.rtvslo.si): Slovenski filmi in Slovenske serije, za Cloudflare Workers.",
+  "scripts": { "dev": "wrangler dev", "deploy": "wrangler deploy" },
+  "keywords": ["stremio", "nuvio", "rtv365", "rtvslo", "cloudflare-workers"],
+  "license": "MIT",
+  "devDependencies": { "wrangler": "^4.0.0" }
+}

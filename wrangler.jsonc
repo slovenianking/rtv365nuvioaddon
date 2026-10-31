@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Mora se ujemati z imenom projekta/Workerja v Cloudflare (Workers & Pages -> Settings -> Build).
+  "name": "rtv365nuvioaddon",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public"
+  },
+  "vars": {
+    // Javni client_id spletne strani 365.rtvslo.si (isti za vse obiskovalce).
+    "RTV_CLIENT_ID": "82013fb3a531d5414f478747c1aca622",
+    // Seznama, iz katerih se gradita katalogu:
+    "MOVIES_URL": "https://365.rtvslo.si/raziskuj?&WPId=335&c=show",
+    "MOVIES_SHOW_ID": "236",
+    "SERIES_URL": "https://365.rtvslo.si/oddaje/seznam/339?group=show_covers&imageType=thumbnail&clip=show&page=serije"
+    // Neobvezno: "PUBLIC_URL": "https://rtv365nuvioaddon.<poddomena>.workers.dev"
+  },
+  "observability": { "enabled": true }
+}
